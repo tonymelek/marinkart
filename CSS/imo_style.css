@@ -1,0 +1,134 @@
+.upper_center{
+text-align: center;
+border-style: solid;
+border-width: 2px;
+border-color:navy;
+border-radius: 10px;
+margin: 10px;
+}
+ h3{
+    color: red;
+    font-size: 20pt;
+    margin: 10px 0;
+    text-align: center;
+    
+}
+.upper_center a{
+    text-decoration: none;
+    background-color: navy;
+    color: wheat;
+    font-family: Calibri;
+    line-height: 1.5em;
+    border-radius: 4px;
+    font-size: 20px;
+    padding: 8px;
+    margin:8px;
+    font-weight: 700;
+}
+@media screen and (max-width:360px){
+    .upper_center a{
+        display: block;
+    }
+}
+
+.upper_center a:hover{
+    background-color:rgb(48, 48, 197);
+    color: whitesmoke;
+}
+.container{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: stretch;
+    /* align-content: center; */
+    /* justify-content: space-evenly; */
+    width:100%;
+    
+}
+.container h3,h4{
+    text-align: center;
+    display: block;
+    /*width:100%;*/
+}
+ /* .manual{
+    order:1;
+    flex-grow: 1;
+    width: 375px;
+    flex-shrink: 1;
+    margin: 10px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: navy;
+    border-radius: 10px;
+} */
+.imsar{
+    flex-grow: 1;
+    flex-shrink: 1;
+    width:375px;
+    margin:10px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: navy;
+    border-radius: 10px;
+}
+.second{
+flex-grow: 1;
+flex-shrink: 1;
+width:170px;
+margin: 10px;
+border-style: solid;
+border-width: 2px;
+border-color: navy;
+border-radius: 10px;
+}
+.second_a{
+    flex-grow: 1;
+    flex-shrink: 1;
+    width:30%;
+    margin: 10px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: navy;
+    border-radius: 10px;
+    /* align-self: flex-start; */
+    }
+.help{
+   width:80%;
+   height: 300px;
+ margin: 0 auto;
+ margin-bottom: 10px;
+}
+.help img{
+    width:100%;
+    height: 100%;
+}
+
+.help img:hover{
+    /* position: relative;
+     bottom:10%;
+    /*left: 10%; 
+    height:120%;
+    width: 120%;
+z-index: 10; */
+
+}
+
+.second h4{
+ 
+   margin: 0px;
+    font-size: 16pt;
+
+}
+
+
+
+
+.imsar img{
+    float: left;
+    padding: 10px;
+    width:30%;
+}
+.imsar p{
+    text-align:justify ;
+    padding: 10px;
+    font-family: Calibri;
+}

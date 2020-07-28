@@ -1,0 +1,115 @@
+/* Background Image Alexandria */
+.maina{
+    background-image: url(../images/alex.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: space-evenly;
+    align-content: stretch;
+    align-items: stretch;
+    flex-wrap: wrap;
+    height: 100%;
+  
+    
+}
+/* Background Image PortSaid */
+.mainp{
+
+    background-image: url(../images/PS.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: space-evenly;
+    align-content: stretch;
+    align-items: stretch;
+    flex-wrap: wrap;
+    height: 100%;
+    
+}
+
+/* Background Image Suez */
+.mains{
+
+    background-image: url(../images/Sz.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: space-evenly;
+    align-content: stretch;
+    align-items: stretch;
+    flex-wrap: wrap;
+    height: 100%;
+}
+
+
+.info{
+    
+    flex-grow: 1;
+    flex-shrink: 1;
+    width:50%;
+    height: 100%;
+}
+.map{
+    flex-grow: 1;
+    flex-shrink: 1;
+    margin: 5px; 
+    position: relative;
+    width: 370px;
+    height: 407px;
+  
+    
+    }
+.info h1{
+   
+    color: rgb(128, 0, 122);
+    font-size: 22pt;
+    padding-left: 10px;
+}
+.info h2{
+    color: red;
+    font-family: calibri;
+    font-size: 16pt;
+    text-align: center;
+  
+}
+
+span{
+    font-size: 12pt;
+    font-family:  Calibri, 'Trebuchet MS', sans-serif;
+    color: red;
+    font-style: italic;
+    font-weight: 700;
+}
+#special{
+    display: inline;
+}
+.details{
+    list-style: none;
+    padding-left: 20px;
+}
+.details li{
+    margin-bottom: 5px;
+    font-family:  Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 13pt;
+}
+
+.hours{
+    text-align: center;
+    font-weight: 700;
+    margin-top: 0px;
+    font-family:  Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 12pt;
+}
+ 
+
+
+iframe{
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
