@@ -1,151 +1,96 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-172835969-1"></script>
-        <script>
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-172835969-1"></script>
+    <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
+        function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
 
         gtag('config', 'UA-172835969-1');
-        </script>
+    </script>
 
-            <title>Marinkart</title>
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <link rel="stylesheet" href="CSS/styletr.css">
-            <link rel="icon" href="images/icon.png">
-            <link href="https://fonts.googleapis.com/css2?family=Sriracha&family=Tangerine&display=swap" rel="stylesheet">
-            <script src="https://kit.fontawesome.com/c939d0e917.js"></script>
-            <style>
-            .local{
-                color: rgb(22, 206, 22)!important;
-            }
-            </style>
+    <title>Marinkart</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/styletr.css">
+    <link rel="icon" href="images/icon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Sriracha&family=Tangerine&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c939d0e917.js"></script>
+    <style>
+        .local {
+            color: rgb(22, 206, 22) !important;
+        }
+    </style>
 
-    </head>
-    <body>
-        <!--Header-->
-        <header>
+</head>
+
+<body>
+    <!--Header-->
+    <header>
         <div class="wrap">
             <picture class="adm">
                 <source srcset="images/admiralty.jpg" media="(min-width: 770px)">
-            <img  alt="">
+                <img alt="">
             </picture>
-            <!-- <img id="flag" src="images/Egypt.gif" alt=""> -->
+
             <div class="headings">
                 <h1>Marinkart</h1>
                 <h2>British Admiralty Charts and Publications</h2>
-                
-            
             </div>
             <picture>
                 <source srcset="images/iso.png" media="(min-width: 1100px)">
-            <img class="iso" alt="">
+                <img class="iso" alt="">
             </picture>
-            
-            </div>
-        </header>
-            <!-- Mobile Menu -->
-            <div class="mobile"><a href="#" id="mobile"><img src="images/menu_w.png" alt="" width="50px"></a></div>
-               <!--Menu Bar-->
-               <section>
-                <div class="menu_bar" id="navigation_menu">
-                    <ul>
-                        <li><a href="index.html"><i class="fas fa-home"></i>&nbsp;Home</a></li>
-                        <li><a href="products.html" ><i class="fas fa-map-marked-alt"></i>&nbsp;Products</a></li>
-                        <li><a href="Services.html" ><i class="fas fa-eraser"></i>&nbsp;Services</a></li>
-                        <li class="dropdown" id="ml0"><a href="#" ><i class="fas fa-newspaper"></i>&nbsp;News</a>
-                            <div class="dropdown-content">
-                                <a href="imoitu.html">IMO &ITU</a>
-                                <a href="admiralty.html">Admiralty</a>
-                              </div>
-                        </li>
-                        <ul class="mobile_list" id="ml1">
-                            <li> <a href="imoitu.html">IMO &ITU</a></li>
-                            <li> <a href="admiralty.html">Admiralty</a></li>
-                         </ul>
-                        
-                        <li class="dropdown" id="ml2"><a href="#"><i class="fas fa-phone"></i>&nbsp;Contact Us</a>
-                            <div class="dropdown-content">
-                                <a href="ContactusAlex.html">Alexandria</a>
-                                <a href="ContactusPS.html">Port-Said</a>
-                                <a href="ContactusSz.html">Suez</a>
-                              </div></li>
-                              <ul class="mobile_list" id="ml3">
-                               <li> <a href="ContactusAlex.html">Alexandria</a></li>
-                               <li> <a href="ContactusPS.html">Port-Said</a></li>
-                               <li> <a href="ContactusSz.html">Suez</a></li>
-                            </ul>
+        </div>
+    </header>
+    <!-- Mobile Menu -->
+    <div class="mobile"><a href="#" id="mobile"><img src="images/menu_w.png" alt="mobile_menu" width="50px"></a></div>
+    <!--Menu Bar-->
+    <section>
+        <div class="menu_bar" id="navigation_menu">
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home"></i>&nbsp;Home</a></li>
+                <li><a href="products.html"><i class="fas fa-map-marked-alt"></i>&nbsp;Products</a></li>
+                <li><a href="Services.html"><i class="fas fa-eraser"></i>&nbsp;Services</a></li>
+                <li class="dropdown" id="ml0"><a href="#"><i class="fas fa-newspaper"></i>&nbsp;News</a>
+                    <div class="dropdown-content">
+                        <a href="imoitu.html">IMO &ITU</a>
+                        <a href="admiralty.html">Admiralty</a>
+                    </div>
+                </li>
+                <ul class="mobile_list" id="ml1">
+                    <li> <a href="imoitu.html">IMO &ITU</a></li>
+                    <li> <a href="admiralty.html">Admiralty</a></li>
+                </ul>
 
-                      </ul>
-                </div>
+                <li class="dropdown" id="ml2"><a href="#"><i class="fas fa-phone"></i>&nbsp;Contact Us</a>
+                    <div class="dropdown-content">
+                        <a href="ContactusAlex.html">Alexandria</a>
+                        <a href="ContactusPS.html">Port-Said</a>
+                        <a href="ContactusSz.html">Suez</a>
+                    </div>
+                </li>
+                <ul class="mobile_list" id="ml3">
+                    <li> <a href="ContactusAlex.html">Alexandria</a></li>
+                    <li> <a href="ContactusPS.html">Port-Said</a></li>
+                    <li> <a href="ContactusSz.html">Suez</a></li>
+                </ul>
+
+            </ul>
+        </div>
     </section>
+    <script src="./js/app.js"></script>
 
-
-            <script>
-                var i=0;
-                var mlc0=0;
-                var mlc1=0;
-                const mobile=document.getElementById("mobile");
-                const nav=document.getElementById("navigation_menu");
-                const ml0=document.getElementById("ml0");
-                const ml1=document.getElementById("ml1");
-                const ml2=document.getElementById("ml2");
-                const ml3=document.getElementById("ml3");
-                ml3.style.display="none";
-                ml1.style.display="none";
-                timer=0;
-                setInterval(()=>{
-                    snap1=window.innerWidth;
-
-                  if((snap1>900)){
-                       nav.style.display="block";
-                       ml3.style.display="none";
-                       ml1.style.display="none";
-                       mlc0=0;
-                       mlc1=0;
-                       nav.style.display=="block"?i=1:i=0
-                    timer=200;
-                     }
-                     
-                },timer);
-                ml0.addEventListener("click",()=>{
-                    mlc0+=1;
-                    if ((mlc0%2==0) ){
-                        ml1.style.display="none";
-                    }
-                    else{
-                        ml1.style.display="block";
-                    }
-                })
-                ml2.addEventListener("click",()=>{
-                    mlc1+=1;
-                    if ((mlc1%2==0) ){
-                        ml3.style.display="none";
-                    }
-                    else{
-                        ml3.style.display="block";
-                    }
-                })
-                mobile.addEventListener("click",()=>{
-                    console.log(window.innerWidth);
-                    i+=1;
-                    console.log(i);
-                    if ((i%2==0) ){
-                        nav.style.display="none";
-                    }
-                    else{
-                        nav.style.display="block";
-                    }
-                })
-            </script>
     <!-- Main Content -->
     <section>
         <div class="pagecenter">
-           
+
             <div class="wording">
-                <h3>Marinkart</h3><span> is the British Admiralty Agent  in EGYPT  since 1978.<br> We have a wide range of <a href="Products.html">products</a>  and <a href="Services.html"> services</a> that we can offer to our valuable customers.</span>
+                <h3>Marinkart</h3><span> is the British Admiralty Agent in EGYPT since 1978.<br> We have a wide range of
+                    <a href="Products.html">products</a> and <a href="Services.html"> services</a> that we can offer to
+                    our valuable customers.</span>
                 <p>You can reach us in </p>
                 <ul>
                     <li><a href="ContactusAlex.html">Alexandria</a></li>
@@ -153,30 +98,42 @@
                     <li><a href="ContactusSz.html">Suez</a></li>
                 </ul>
                 <h3 id="latest">Latest News</h3>
-                <a href="https://api.whatsapp.com/send?phone=+201202605258"  target="_blank"><i class="fab fa-whatsapp-square"></i></a> Place your orders via WhatsApp. <sup>*</sup>
-                
-                <br><a href="https://www.admiralty.co.uk/AdmiraltyDownloadMedia/CAL/chart_availability_list.xls"><i class="fas fa-file-excel"></i></a> Check the chart availabilty. <sup>*</sup>
-                <br><a href="https://www.admiralty.co.uk/digital-services/catalogues/admiralty-digital-catalogue" target="_blank"><i class="fas fa-book"></i></a> Admiralty Digital Catalogue <sup>*</sup>
-                <br><a href="https://www.admiralty.co.uk/AdmiraltyDownloadMedia/Sailing%20Directions/Current%20SD%20status.pdf" target="_blank"><i id="pdf" class="far fa-file-pdf"></i></a> Current Editions of Sailing Directions and their latest Supplements <sup>*</sup>
+                <a href="https://api.whatsapp.com/send?phone=+201202605258" target="_blank"><i
+                        class="fab fa-whatsapp-square"></i></a> Place your orders via WhatsApp. <sup>*</sup>
+
+                <br><a href="https://www.admiralty.co.uk/AdmiraltyDownloadMedia/CAL/chart_availability_list.xls"><i
+                        class="fas fa-file-excel"></i></a> Check the chart availabilty. <sup>*</sup>
+                <br><a href="https://www.admiralty.co.uk/digital-services/catalogues/admiralty-digital-catalogue"
+                    target="_blank"><i class="fas fa-book"></i></a> Admiralty Digital Catalogue <sup>*</sup>
+                <br><a
+                    href="https://www.admiralty.co.uk/AdmiraltyDownloadMedia/Sailing%20Directions/Current%20SD%20status.pdf"
+                    target="_blank"><i id="pdf" class="far fa-file-pdf"></i></a> Current Editions of Sailing Directions
+                and their latest Supplements <sup>*</sup>
                 </p>
                 <p id="guide">* Click the icon on the left to start a download or get transferred</p>
             </div>
-           <div class="locations">
-            <img src="images/Location.png" alt="Our Locations">
-           </div> 
+            <div class="locations">
+                <img src="images/Location.png" alt="Our Locations">
+            </div>
         </div>
 
     </section>
-        <!-- Footer -->
-        <footer>
-            <div class="upper_footer">
-            <a href="https://api.whatsapp.com/send?phone=+201202605258" target="_blank"><i class="fab fa-whatsapp-square"></i></a>
-            Now, you can place your order via WhatsApp +20 120 260 5258 <em>simply click the WhatsApp icon to be transferred </em>
-            <a href="https://api.whatsapp.com/send?phone=+201202605258" target="_blank"><i class="fab fa-whatsapp-square"></i></a>
-            </div>
-            <div class="copyrights">
-                Copyright &#169; Marinkart 2020 Designed and developed by <a href="mailto:tonymelek.au@gmail.com">TNM Group</a> 
-            </div>
-        </footer>
-    </body>
+    <!-- Footer -->
+    <footer>
+        <div class="upper_footer">
+            <a href="https://api.whatsapp.com/send?phone=+201202605258" target="_blank"><i
+                    class="fab fa-whatsapp-square"></i></a>
+            Now, you can place your order via WhatsApp +20 120 260 5258 <em>simply click the WhatsApp icon to be
+                transferred </em>
+            <a href="https://api.whatsapp.com/send?phone=+201202605258" target="_blank"><i
+                    class="fab fa-whatsapp-square"></i></a>
+        </div>
+        <div class="copyrights">
+            Copyright &#169; Marinkart 2020 Designed and developed by <a href="mailto:tonymelek.au@gmail.com">TNM
+                Group</a>
+        </div>
+    </footer>
+
+</body>
+
 </html>

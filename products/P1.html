@@ -1,146 +1,175 @@
 <!DOCTYPE html>
 <html>
-    <head>
-                <!-- Global site tag (gtag.js) - Google Analytics -->
-                <script async src="https://www.googletagmanager.com/gtag/js?id=UA-172835969-1"></script>
-                <script>
-                window.dataLayer = window.dataLayer || [];
-                function gtag(){dataLayer.push(arguments);}
-                gtag('js', new Date());
-        
-                gtag('config', 'UA-172835969-1');
-                </script>
-            <title>Marinkart</title>
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <link rel="stylesheet" href="../CSS/styletr.css">
-            <link rel="stylesheet" href="../CSS/serv_style.css">
-            <link rel="icon" href="../images/icon.png">
-            <link href="https://fonts.googleapis.com/css2?family=Sriracha&family=Tangerine&display=swap" rel="stylesheet">
-            <script src="https://kit.fontawesome.com/c939d0e917.js"></script>
-            <style>
-                .local{
-                    color: rgb(22, 206, 22)!important;
-                }
-            </style>
-    </head>
-    <body onload = "changePhoto()">
-        <!--Header-->
-        <header>
-            <div class="wrap">
-                <picture class="adm">
-                    <source srcset="../images/admiralty.jpg" media="(min-width: 768px)">
-                <img  alt="">
-                </picture>
-                <!-- <img id="flag" src="images/Egypt.gif" alt=""> -->
-                <div class="headings">
-                    <h1>Marinkart</h1>
-                    <h2>British Admiralty Charts and Publications</h2>
-                    
-                
-                </div>
-                <picture>
-                    <source srcset="../images/iso.png" media="(min-width: 1100px)">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-172835969-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-172835969-1');
+    </script>
+    <title>Marinkart</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/styletr.css">
+    <link rel="stylesheet" href="../CSS/serv_style.css">
+    <link rel="icon" href="../images/icon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Sriracha&family=Tangerine&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c939d0e917.js"></script>
+    <style>
+        .local {
+            color: rgb(22, 206, 22) !important;
+        }
+    </style>
+</head>
+
+<body onload="changePhoto()">
+    <!--Header-->
+    <header>
+        <div class="wrap">
+            <picture class="adm">
+                <source srcset="../images/admiralty.jpg" media="(min-width: 768px)">
+                <img alt="">
+            </picture>
+            <!-- <img id="flag" src="images/Egypt.gif" alt=""> -->
+            <div class="headings">
+                <h1>Marinkart</h1>
+                <h2>British Admiralty Charts and Publications</h2>
+
+
+            </div>
+            <picture>
+                <source srcset="../images/iso.png" media="(min-width: 1100px)">
                 <img class="iso" alt="">
-                </picture>
-                
-                </div>
-            </header>
-            
-                   <!--Menu Bar-->
-                   <section>
-                    <div class="menu_bar">
-                        <ul>
-                            <li><a href="../index.html"><i class="fas fa-home"></i>&nbsp;Home</a></li>
-                            <li><a href="../products.html" class="local"><i class="fas fa-map-marked-alt"></i>&nbsp;Products</a></li>
-                            <li><a href="../Services.html" ><i class="fas fa-eraser"></i>&nbsp;Services</a></li>
-                            <li class="dropdown"><a href="" ><i class="fas fa-newspaper"></i>&nbsp;News</a>
-                                <div class="dropdown-content">
-                                    <a href="../imoitu.html">IMO &ITU</a>
-                                    <a href="../admiralty.html">Admiralty</a>
-                                  </div>
-                            </li>
-                            
-                            <li class="dropdown"><a href=""><i class="fas fa-phone"></i>&nbsp;Contact Us</a>
-                                <div class="dropdown-content">
-                                    <a href="../ContactusAlex.html">Alexandria</a>
-                                    <a href="../ContactusPS.html">Port-Said</a>
-                                    <a href="../ContactusSz.html">Suez</a>
-                                  </div></li>
-    
-                          </ul>
+            </picture>
+
+        </div>
+    </header>
+    <!-- Mobile Menu -->
+    <div class="mobile"><a href="#" id="mobile"><img src="../images/menu_w.png" alt="mobile_menu" width="50px"></a>
+    </div>
+    <!--Menu Bar-->
+    <section>
+        <div class="menu_bar" id="navigation_menu">
+            <ul>
+                <li><a href="../index.html"><i class="fas fa-home"></i>&nbsp;Home</a></li>
+                <li><a href="../products.html" class="local"><i class="fas fa-map-marked-alt"></i>&nbsp;Products</a>
+                </li>
+                <li><a href="../Services.html"><i class="fas fa-eraser"></i>&nbsp;Services</a></li>
+                <li class="dropdown" id="ml0"><a href="#"><i class="fas fa-newspaper"></i>&nbsp;News</a>
+                    <div class="dropdown-content">
+                        <a href="../imoitu.html">IMO &ITU</a>
+                        <a href="../admiralty.html">Admiralty</a>
                     </div>
-        </section>
-        <!--Products-->
-        <section>
-            <div class="serv">
-                <div class="details">
-                    <h1 id="avcs">Charts</h1>
-                    <h5>(POD) Print On Demand</h5>
-                    <p> 
-                     Allows Marinkart to print latest SNCs on site and fulfil ship's urgent orders in the quickest time possible
-                    </p>
-                </div>
-                <img src="admiralty/p1.jpg" alt="Products">
+                </li>
+                <ul class="mobile_list" id="ml1">
+                    <li> <a href="../imoitu.html">IMO &ITU</a></li>
+                    <li> <a href="../admiralty.html">Admiralty</a></li>
+                </ul>
+
+                <li class="dropdown" id="ml2"><a href="#"><i class="fas fa-phone"></i>&nbsp;Contact Us</a>
+                    <div class="dropdown-content">
+                        <a href="../ContactusAlex.html">Alexandria</a>
+                        <a href="../ContactusPS.html">Port-Said</a>
+                        <a href="../ContactusSz.html">Suez</a>
+                    </div>
+                </li>
+                <ul class="mobile_list" id="ml3">
+                    <li> <a href="../ContactusAlex.html">Alexandria</a></li>
+                    <li> <a href="../ContactusPS.html">Port-Said</a></li>
+                    <li> <a href="../ContactusSz.html">Suez</a></li>
+                </ul>
+
+            </ul>
+        </div>
+    </section>
+    <script src="../js/app.js"></script>
+
+    <!--Products-->
+    <section>
+        <div class="serv">
+            <div class="details">
+                <h1 id="avcs">Charts</h1>
+                <h5>(POD) Print On Demand</h5>
+                <p>
+                    Allows Marinkart to print latest SNCs on site and fulfil ship's urgent orders in the quickest time
+                    possible
+                </p>
             </div>
-            
-            <div class="serv">
-                <div class="details">
-                    <h1>Digital Charts</h1>
-                    <p> 
-                        ARCS " Admiralty Raster Chart Service " is the UKHO's charts presented in a digital format . ARCS charts are licensed on a chart-by-chart basis . ARCS  charts  have the same  familiar  image  as  paper charts . AVCS " Admiralty Vector Chart Service " enables shore-based users to view charts from the internet connected PC providing immediate access to world-wide charts . Through Marinkart you can get the Admiralty License to use these services : ARCS and AVCS 
-                    </p>
-                </div>
-                <img src="admiralty/p2.jpg" alt="Products">
+            <img src="admiralty/p1.jpg" alt="Products">
+        </div>
+
+        <div class="serv">
+            <div class="details">
+                <h1>Digital Charts</h1>
+                <p>
+                    ARCS " Admiralty Raster Chart Service " is the UKHO's charts presented in a digital format . ARCS
+                    charts are licensed on a chart-by-chart basis . ARCS charts have the same familiar image as paper
+                    charts . AVCS " Admiralty Vector Chart Service " enables shore-based users to view charts from the
+                    internet connected PC providing immediate access to world-wide charts . Through Marinkart you can
+                    get the Admiralty License to use these services : ARCS and AVCS
+                </p>
             </div>
+            <img src="admiralty/p2.jpg" alt="Products">
+        </div>
 
-            <div class="serv">
-                <div class="details">
-                    <h1>Publications</h1>
-                    <p> 
-                        All Marinkart premises keep all Nautical Publications: Admiralty Sailing Directions ( Pilot Books ) , Admiralty Lists of Lights Admiralty , Lists of Radio Signals Admiralty , Tide Tables , Admiralty Distance Tables , Admiralty Weekly Notices to Mariners , Chart Correction Tracings , Admiralty Mariners Handbook , Ocean Passages for the World.
-                    </p>
-                </div>
-                <img src="admiralty/p3.jpg" alt="Products">
+        <div class="serv">
+            <div class="details">
+                <h1>Publications</h1>
+                <p>
+                    All Marinkart premises keep all Nautical Publications: Admiralty Sailing Directions ( Pilot Books )
+                    , Admiralty Lists of Lights Admiralty , Lists of Radio Signals Admiralty , Tide Tables , Admiralty
+                    Distance Tables , Admiralty Weekly Notices to Mariners , Chart Correction Tracings , Admiralty
+                    Mariners Handbook , Ocean Passages for the World.
+                </p>
             </div>
+            <img src="admiralty/p3.jpg" alt="Products">
+        </div>
 
 
-            <div class="serv">
-                <div class="details">
-                    <h1>Digital Publications</h1>
-                    <ul> 
-                        <li><strong>ADP - </strong> Admiralty Digital Publications</li>
-                        <li><strong>ATT - </strong> Admiralty Total Tide</li>
-                        <li><strong>ADRS - </strong> Admiralty Digital Radio Signals</li>
-                    </ul>
-                </div>
-                <script>
-                    var pos = 1;
-                    var images = ["admiralty/p41.jpg", "admiralty/p42.jpg", "admiralty/p43.jpg"];
-
-                    var timerid = setInterval(function changePhoto() {
-                        var image = document.getElementById("image");
-                        image.src=images[pos%3];
-                        pos+=1;}
-                        , 1500);
-                     
-                     
-                 </script>
-                <img src="admiralty/p41.jpg" id="image" alt="Products">
-              
+        <div class="serv">
+            <div class="details">
+                <h1>Digital Publications</h1>
+                <ul>
+                    <li><strong>ADP - </strong> Admiralty Digital Publications</li>
+                    <li><strong>ATT - </strong> Admiralty Total Tide</li>
+                    <li><strong>ADRS - </strong> Admiralty Digital Radio Signals</li>
+                </ul>
             </div>
+            <script>
+                var pos = 1;
+                var images = ["admiralty/p41.jpg", "admiralty/p42.jpg", "admiralty/p43.jpg"];
+
+                var timerid = setInterval(function changePhoto() {
+                    var image = document.getElementById("image");
+                    image.src = images[pos % 3];
+                    pos += 1;
+                }
+                    , 1500);
+
+
+            </script>
+            <img src="admiralty/p41.jpg" id="image" alt="Products">
+
+        </div>
 
 
 
-        </section>
-        <footer>
-            <div class="upper_footer">
+    </section>
+    <footer>
+        <div class="upper_footer">
             <a href="https://api.whatsapp.com/send?phone=+201202605258"><i class="fab fa-whatsapp-square"></i></a>
-            Now, you can place your order via WhatsApp +20 120 260 5258 <em>simply click the WhatsApp icon to be transferred </em>
+            Now, you can place your order via WhatsApp +20 120 260 5258 <em>simply click the WhatsApp icon to be
+                transferred </em>
             <a href="https://api.whatsapp.com/send?phone=+201202605258"><i class="fab fa-whatsapp-square"></i></a>
-            </div>
-            <div class="copyrights">
-                Copyright &#169; Marinkart 2020 Designed and developed by <a href="mailto:tonymelek.au@gmail.com">TNM Group</a> 
-            </div>
-        </footer>
-    </body>
+        </div>
+        <div class="copyrights">
+            Copyright &#169; Marinkart 2020 Designed and developed by <a href="mailto:tonymelek.au@gmail.com">TNM
+                Group</a>
+        </div>
+    </footer>
+</body>
+
 </html>

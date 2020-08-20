@@ -1,91 +1,106 @@
 <!DOCTYPE html>
 <html>
-    <head>
-                <!-- Global site tag (gtag.js) - Google Analytics -->
-                <script async src="https://www.googletagmanager.com/gtag/js?id=UA-172835969-1"></script>
-                <script>
-                window.dataLayer = window.dataLayer || [];
-                function gtag(){dataLayer.push(arguments);}
-                gtag('js', new Date());
-        
-                gtag('config', 'UA-172835969-1');
-                </script>
-            <title>Marinkart</title>
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <link rel="stylesheet" href="CSS/styletr.css">
-            <link rel="stylesheet" href="CSS/serv_style.css">
-            <link rel="icon" href="images/icon.png">
-            <link href="https://fonts.googleapis.com/css2?family=Sriracha&family=Tangerine&display=swap" rel="stylesheet">
-            <script src="https://kit.fontawesome.com/c939d0e917.js"></script>
-            <style>
-                .local{
-                    color: rgb(22, 206, 22)!important;
-                }
-            </style>
-    </head>
-    <body>
-        <!--Header-->
-        <header>
-            <div class="wrap">
-                <picture class="adm">
-                    <source srcset="images/admiralty.jpg" media="(min-width: 768px)">
-                <img  alt="">
-                </picture>
-                <!-- <img id="flag" src="images/Egypt.gif" alt=""> -->
-                <div class="headings">
-                    <h1>Marinkart</h1>
-                    <h2>British Admiralty Charts and Publications</h2>
-                    
-                
-                </div>
-                <picture>
-                    <source srcset="images/iso.png" media="(min-width: 1100px)">
-                <img class="iso" alt="">
-                </picture>
-                
-                </div>
-            </header>
-            
-                   <!--Menu Bar-->
-                   <section>
-                    <div class="menu_bar">
-                        <ul>
-                            <li><a href="index.html"><i class="fas fa-home"></i>&nbsp;Home</a></li>
-                            <li><a href="products.html" class="local"><i class="fas fa-map-marked-alt"></i>&nbsp;Products</a></li>
-                            <li><a href="Services.html" ><i class="fas fa-eraser"></i>&nbsp;Services</a></li>
-                            <li class="dropdown"><a href="" ><i class="fas fa-newspaper"></i>&nbsp;News</a>
-                                <div class="dropdown-content">
-                                    <a href="imoitu.html">IMO &ITU</a>
-                                    <a href="admiralty.html">Admiralty</a>
-                                  </div>
-                            </li>
-                            
-                            <li class="dropdown"><a href=""><i class="fas fa-phone"></i>&nbsp;Contact Us</a>
-                                <div class="dropdown-content">
-                                    <a href="ContactusAlex.html">Alexandria</a>
-                                    <a href="ContactusPS.html">Port-Said</a>
-                                    <a href="ContactusSz.html">Suez</a>
-                                  </div></li>
-    
-                          </ul>
-                    </div>
-        </section>
-        <!--Products-->
-        <section>
-            <div class="serv">
-                <div class="details">
-                    <h1>Admiralty Products</h1>
-                    <p> 
-                        All Marinkart premises keep World Wide Coverage of Nautical Charts : Standard Navigational and Thematic and Nautical Publications
-                    </p>
-                    <a href="products/P1.html">More Details</a>
-                </div>
-                <img src="images/products/p1.jpg" alt="Products">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-172835969-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-172835969-1');
+    </script>
+    <title>Marinkart</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/styletr.css">
+    <link rel="stylesheet" href="CSS/serv_style.css">
+    <link rel="icon" href="images/icon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Sriracha&family=Tangerine&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c939d0e917.js"></script>
+    <style>
+        .local {
+            color: rgb(22, 206, 22) !important;
+        }
+    </style>
+</head>
+
+<body>
+    <!--Header-->
+    <header>
+        <div class="wrap">
+            <picture class="adm">
+                <source srcset="images/admiralty.jpg" media="(min-width: 768px)">
+                <img alt="">
+            </picture>
+            <!-- <img id="flag" src="images/Egypt.gif" alt=""> -->
+            <div class="headings">
+                <h1>Marinkart</h1>
+                <h2>British Admiralty Charts and Publications</h2>
+
+
             </div>
-            <div class="serv">
+            <picture>
+                <source srcset="images/iso.png" media="(min-width: 1100px)">
+                <img class="iso" alt="">
+            </picture>
+
+        </div>
+    </header>
+    <!-- Mobile Menu -->
+    <div class="mobile"><a href="#" id="mobile"><img src="images/menu_w.png" alt="mobile_menu" width="50px"></a></div>
+    <!--Menu Bar-->
+    <section>
+        <div class="menu_bar" id="navigation_menu">
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home"></i>&nbsp;Home</a></li>
+                <li><a href="products.html" class="local"><i class="fas fa-map-marked-alt"></i>&nbsp;Products</a></li>
+                <li><a href="Services.html"><i class="fas fa-eraser"></i>&nbsp;Services</a></li>
+                <li class="dropdown" id="ml0"><a href="#"><i class="fas fa-newspaper"></i>&nbsp;News</a>
+                    <div class="dropdown-content">
+                        <a href="imoitu.html">IMO &ITU</a>
+                        <a href="admiralty.html">Admiralty</a>
+                    </div>
+                </li>
+                <ul class="mobile_list" id="ml1">
+                    <li> <a href="imoitu.html">IMO &ITU</a></li>
+                    <li> <a href="admiralty.html">Admiralty</a></li>
+                </ul>
+
+                <li class="dropdown" id="ml2"><a href="#"><i class="fas fa-phone"></i>&nbsp;Contact Us</a>
+                    <div class="dropdown-content">
+                        <a href="ContactusAlex.html">Alexandria</a>
+                        <a href="ContactusPS.html">Port-Said</a>
+                        <a href="ContactusSz.html">Suez</a>
+                    </div>
+                </li>
+                <ul class="mobile_list" id="ml3">
+                    <li> <a href="ContactusAlex.html">Alexandria</a></li>
+                    <li> <a href="ContactusPS.html">Port-Said</a></li>
+                    <li> <a href="ContactusSz.html">Suez</a></li>
+                </ul>
+
+            </ul>
+        </div>
+    </section>
+    <script src="./js/app.js"></script>
+    <!--Products-->
+    <section>
+        <div class="serv">
+            <div class="details">
+                <h1>Admiralty Products</h1>
+                <p>
+                    All Marinkart premises keep World Wide Coverage of Nautical Charts : Standard Navigational and
+                    Thematic and Nautical Publications
+                </p>
+                <a href="products/P1.html">More Details</a>
+            </div>
+            <img src="images/products/p1.jpg" alt="Products">
+        </div>
+        <div class="serv">
             <div class="details">
                 <h1>Marinkart Products</h1>
-                <p> 
+                <p>
                     All Marinkart premises keep a wide variety of logbooks and flags
                 </p>
                 <a href="products/P2.html">More Details</a>
@@ -93,46 +108,51 @@
             <img src="images/products/p2.jpg" alt="Products">
         </div>
         <div class="serv">
-        <div class="details">
-            <h1>Other Products</h1>
-            <p> 
-                Marinkart is an authoroized disributors. We keep all important titles from IMO and ITU and other publishers
-            </p>
-            <a href="products/P3.html">More Details</a>
-        </div>
-        <img src="images/products/p3.jpg" alt="Products">
-    </div>
-    <div class="serv">
-        <div class="details">
-            <h1>AVCS</h1>
-            <h1>[Admiralty Vector Chart Service]</h1>
-            <p> 
-                Latest Chart updates are automatically uploaded. Access to chart data from any web-enabled PC without need to install data or software.
-            </p>
-            <a href="products/P4.html">More Details</a>
-        </div>
-        <img src="images/products/p4.jpg" alt="Products">
-    </div>
-    <div class="serv">
-        <div class="details">
-            <h1>Navigational Accessories</h1>
-            <p> 
-                Binoculars and Correction Tools are available at Marinkart.
-            </p>
-            <a href="products/P5.html">More Details</a>
-        </div>
-        <img src="images/products/p5.jpg" alt="Products">
-    </div>
-        </section>
-        <footer>
-            <div class="upper_footer">
-            <a href="https://api.whatsapp.com/send?phone=+201202605258"><i class="fab fa-whatsapp-square"></i></a>
-            Now, you can place your order via WhatsApp +20 120 260 5258 <em>simply click the WhatsApp icon to be transferred </em>
-            <a href="https://api.whatsapp.com/send?phone=+201202605258"><i class="fab fa-whatsapp-square"></i></a>
+            <div class="details">
+                <h1>Other Products</h1>
+                <p>
+                    Marinkart is an authoroized disributors. We keep all important titles from IMO and ITU and other
+                    publishers
+                </p>
+                <a href="products/P3.html">More Details</a>
             </div>
-            <div class="copyrights">
-                Copyright &#169; Marinkart 2020 Designed and developed by <a href="mailto:tonymelek.au@gmail.com">TNM Group</a> 
+            <img src="images/products/p3.jpg" alt="Products">
+        </div>
+        <div class="serv">
+            <div class="details">
+                <h1>AVCS</h1>
+                <h1>[Admiralty Vector Chart Service]</h1>
+                <p>
+                    Latest Chart updates are automatically uploaded. Access to chart data from any web-enabled PC
+                    without need to install data or software.
+                </p>
+                <a href="products/P4.html">More Details</a>
             </div>
-        </footer>
-    </body>
+            <img src="images/products/p4.jpg" alt="Products">
+        </div>
+        <div class="serv">
+            <div class="details">
+                <h1>Navigational Accessories</h1>
+                <p>
+                    Binoculars and Correction Tools are available at Marinkart.
+                </p>
+                <a href="products/P5.html">More Details</a>
+            </div>
+            <img src="images/products/p5.jpg" alt="Products">
+        </div>
+    </section>
+    <footer>
+        <div class="upper_footer">
+            <a href="https://api.whatsapp.com/send?phone=+201202605258"><i class="fab fa-whatsapp-square"></i></a>
+            Now, you can place your order via WhatsApp +20 120 260 5258 <em>simply click the WhatsApp icon to be
+                transferred </em>
+            <a href="https://api.whatsapp.com/send?phone=+201202605258"><i class="fab fa-whatsapp-square"></i></a>
+        </div>
+        <div class="copyrights">
+            Copyright &#169; Marinkart 2020 Designed and developed by <a href="mailto:tonymelek.au@gmail.com">TNM
+                Group</a>
+        </div>
+    </footer>
+</body>
+
 </html>

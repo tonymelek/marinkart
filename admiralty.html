@@ -1,147 +1,169 @@
 <!DOCTYPE html>
 <html>
-    <head>
-                <!-- Global site tag (gtag.js) - Google Analytics -->
-                <script async src="https://www.googletagmanager.com/gtag/js?id=UA-172835969-1"></script>
-                <script>
-                window.dataLayer = window.dataLayer || [];
-                function gtag(){dataLayer.push(arguments);}
-                gtag('js', new Date());
-        
-                gtag('config', 'UA-172835969-1');
-                </script>
-            <title>Marinkart</title>
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <link rel="stylesheet" href="CSS/styletr.css">
-            <link rel="stylesheet" href="CSS/imo_style.css">
-            <link rel="icon" href="images/icon.png">
-            <link href="https://fonts.googleapis.com/css2?family=Sriracha&family=Tangerine&display=swap" rel="stylesheet">
-            <script src="https://kit.fontawesome.com/c939d0e917.js"></script>
-            <style>
-                .local{
-                    color: rgb(22, 206, 22)!important;
-                }
-            </style>
-    </head>
-    <body>
-        <!--Header-->
-        <header>
-            <div class="wrap">
-                <picture class="adm">
-                    <source srcset="images/admiralty.jpg" media="(min-width: 768px)">
-                <img  alt="">
-                </picture>
-                <!-- <img id="flag" src="images/Egypt.gif" alt=""> -->
-                <div class="headings">
-                    <h1>Marinkart</h1>
-                    <h2>British Admiralty Charts and Publications</h2>
-                    
-                
-                </div>
-                <picture>
-                    <source srcset="images/iso.png" media="(min-width: 1100px)">
-                <img class="iso" alt="">
-                </picture>
-                
-                </div>
-            </header>
-            
-                   <!--Menu Bar-->
-                   <section>
-                    <div class="menu_bar">
-                        <ul>
-                            <li><a href="index.html"><i class="fas fa-home"></i>&nbsp;Home</a></li>
-                            <li><a href="products.html" ><i class="fas fa-map-marked-alt"></i>&nbsp;Products</a></li>
-                            <li><a href="Services.html" ><i class="fas fa-eraser"></i>&nbsp;Services</a></li>
-                            <li class="dropdown"><a href="" class="local"><i class="fas fa-newspaper"></i>&nbsp;News</a>
-                                <div class="dropdown-content">
-                                    <a href="imoitu.html">IMO &ITU</a>
-                                    <a href="admiralty.html">Admiralty</a>
-                                  </div>
-                            </li>
-                            
-                            <li class="dropdown"><a href="" ><i class="fas fa-phone"></i>&nbsp;Contact Us</a>
-                                <div class="dropdown-content">
-                                    <a href="ContactusAlex.html">Alexandria</a>
-                                    <a href="ContactusPS.html">Port-Said</a>
-                                    <a href="ContactusSz.html">Suez</a>
-                                  </div></li>
-    
-                          </ul>
-                    </div>
-        </section>
-           
-            <div class="container">
 
-                <div class="second_a">
-                    <h3>Nautical Alamanac</h3>
-                    <h4>2019 Edition</h4><br><br>
-                  <div class="help"> <img src="images\news\admiralty\almanac.jpg" alt=""></div>
-                  
-                </div>
-                <div class="second_a">
-                    <h3>NP 131  Catalogue</h3>
-                    <h4>Admiralty Charts and Hydrographic Publications</h4><br>
-                    <div class="help"> <img src="images\news\admiralty\catalogue.jpg" alt=""></div>
-                    
-                    
-               </div>
-               <div class="second_a">
-                <h3>NP201A [ATT]</h3>
-                <h4>United Kingdom English Channel to River Humber, 2020 Edition</h4><br>
-                <div class="help"> <img src="images\news\admiralty\np201a.jpg" alt=""></div>
-                
-                
-           </div>
-           <div class="second_a">
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-172835969-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-172835969-1');
+    </script>
+    <title>Marinkart</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/styletr.css">
+    <link rel="stylesheet" href="CSS/imo_style.css">
+    <link rel="icon" href="images/icon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Sriracha&family=Tangerine&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c939d0e917.js"></script>
+    <style>
+        .local {
+            color: rgb(22, 206, 22) !important;
+        }
+    </style>
+</head>
+
+<body>
+    <!--Header-->
+    <header>
+        <div class="wrap">
+            <picture class="adm">
+                <source srcset="images/admiralty.jpg" media="(min-width: 768px)">
+                <img alt="">
+            </picture>
+            <!-- <img id="flag" src="images/Egypt.gif" alt=""> -->
+            <div class="headings">
+                <h1>Marinkart</h1>
+                <h2>British Admiralty Charts and Publications</h2>
+
+
+            </div>
+            <picture>
+                <source srcset="images/iso.png" media="(min-width: 1100px)">
+                <img class="iso" alt="">
+            </picture>
+
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile"><a href="#" id="mobile"><img src="images/menu_w.png" alt="mobile_menu" width="50px"></a></div>
+    <!--Menu Bar-->
+    <section>
+        <div class="menu_bar" id="navigation_menu">
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home"></i>&nbsp;Home</a></li>
+                <li><a href="products.html"><i class="fas fa-map-marked-alt"></i>&nbsp;Products</a></li>
+                <li><a href="Services.html" class="local"><i class="fas fa-eraser"></i>&nbsp;Services</a></li>
+                <li class="dropdown" id="ml0"><a href="#"><i class="fas fa-newspaper"></i>&nbsp;News</a>
+                    <div class="dropdown-content">
+                        <a href="imoitu.html">IMO &ITU</a>
+                        <a href="admiralty.html">Admiralty</a>
+                    </div>
+                </li>
+                <ul class="mobile_list" id="ml1">
+                    <li> <a href="imoitu.html">IMO &ITU</a></li>
+                    <li> <a href="admiralty.html">Admiralty</a></li>
+                </ul>
+
+                <li class="dropdown" id="ml2"><a href="#"><i class="fas fa-phone"></i>&nbsp;Contact Us</a>
+                    <div class="dropdown-content">
+                        <a href="ContactusAlex.html">Alexandria</a>
+                        <a href="ContactusPS.html">Port-Said</a>
+                        <a href="ContactusSz.html">Suez</a>
+                    </div>
+                </li>
+                <ul class="mobile_list" id="ml3">
+                    <li> <a href="ContactusAlex.html">Alexandria</a></li>
+                    <li> <a href="ContactusPS.html">Port-Said</a></li>
+                    <li> <a href="ContactusSz.html">Suez</a></li>
+                </ul>
+
+            </ul>
+        </div>
+    </section>
+    <script src="./js/app.js"></script>
+
+
+    <div class="container">
+
+        <div class="second_a">
+            <h3>Nautical Alamanac</h3>
+            <h4>2019 Edition</h4><br><br>
+            <div class="help"> <img src="images\news\admiralty\almanac.jpg" alt=""></div>
+
+        </div>
+        <div class="second_a">
+            <h3>NP 131 Catalogue</h3>
+            <h4>Admiralty Charts and Hydrographic Publications</h4><br>
+            <div class="help"> <img src="images\news\admiralty\catalogue.jpg" alt=""></div>
+
+
+        </div>
+        <div class="second_a">
+            <h3>NP201A [ATT]</h3>
+            <h4>United Kingdom English Channel to River Humber, 2020 Edition</h4><br>
+            <div class="help"> <img src="images\news\admiralty\np201a.jpg" alt=""></div>
+
+
+        </div>
+        <div class="second_a">
             <h3>NP201B [ATT]</h3>
             <h4>United Kingdom and Ireland, 2020 Edition</h4><br><br>
             <div class="help"> <img src="images\news\admiralty\np201b.jpg" alt=""></div>
-           </div>
-            <div class="second_a">
-                <h3>NP202 [ATT]</h3>
-                <h4>Volume 2-North Atlantic Ocean & Arctic Region 2020 Edition</h4><br>
-                <div class="help"> <img src="images\news\admiralty\np202.jpg" alt=""></div>
-           </div>
-            <div class="second_a">
-                <h3>NP203 [ATT]</h3>
-                <h4>Volume 3-Indian Ocean (including Tidal Stream Tables) 2020 Edition</h4><br>
-                <div class="help"> <img src="images\news\admiralty\np203.jpg" alt=""></div>
-           </div>
-           <div class="second_a">
+        </div>
+        <div class="second_a">
+            <h3>NP202 [ATT]</h3>
+            <h4>Volume 2-North Atlantic Ocean & Arctic Region 2020 Edition</h4><br>
+            <div class="help"> <img src="images\news\admiralty\np202.jpg" alt=""></div>
+        </div>
+        <div class="second_a">
+            <h3>NP203 [ATT]</h3>
+            <h4>Volume 3-Indian Ocean (including Tidal Stream Tables) 2020 Edition</h4><br>
+            <div class="help"> <img src="images\news\admiralty\np203.jpg" alt=""></div>
+        </div>
+        <div class="second_a">
             <h3>NP204 [ATT]</h3>
             <h4>Volume 4- South Pacific Ocean (including Tidal Stream Tables)</h4><br>
             <div class="help"> <img src="images\news\admiralty\np204.jpg" alt=""></div>
-       </div>
+        </div>
         <div class="second_a">
             <h3>NP234 [ATT]</h3>
             <h4>Cumulative List Of Admiralty Notices to Mariners (June 2019)</h4><br>
             <div class="help"> <img src="images\news\admiralty\np234.jpg" alt=""></div>
-       </div>
-
-       <div class="second_a">
-        <h3>NP285 [ATT]</h3>
-        <h4>Admiralty List of Radio Signals Volume 5, Global Maritime Distress and Safety System 2019/20 Edition</h4><br>
-        <div class="help"> <img src="images\news\admiralty\np285.jpg" alt=""></div>
-   </div>
-</div>
- 
-            </div>
         </div>
-    
-        <section>
 
-        </section>
-        <footer>
-            <div class="upper_footer">
-            <a href="https://api.whatsapp.com/send?phone=+201202605258" target="_blank"><i class="fab fa-whatsapp-square"></i></a>
-            Now, you can place your order via WhatsApp +20 120 260 5258 <em>simply click the WhatsApp icon to be transferred </em>
-            <a href="https://api.whatsapp.com/send?phone=+201202605258" target="_blank"><i class="fab fa-whatsapp-square"></i></a>
-            </div>
-            <div class="copyrights">
-                Copyright &#169; Marinkart 2020 Designed and developed by <a href="mailto:tonymelek.au@gmail.com">TNM Group</a> 
-            </div>
-        </footer>
-        
-    </body>
+        <div class="second_a">
+            <h3>NP285 [ATT]</h3>
+            <h4>Admiralty List of Radio Signals Volume 5, Global Maritime Distress and Safety System 2019/20 Edition
+            </h4><br>
+            <div class="help"> <img src="images\news\admiralty\np285.jpg" alt=""></div>
+        </div>
+    </div>
+
+    </div>
+    </div>
+
+    <section>
+
+    </section>
+    <footer>
+        <div class="upper_footer">
+            <a href="https://api.whatsapp.com/send?phone=+201202605258" target="_blank"><i
+                    class="fab fa-whatsapp-square"></i></a>
+            Now, you can place your order via WhatsApp +20 120 260 5258 <em>simply click the WhatsApp icon to be
+                transferred </em>
+            <a href="https://api.whatsapp.com/send?phone=+201202605258" target="_blank"><i
+                    class="fab fa-whatsapp-square"></i></a>
+        </div>
+        <div class="copyrights">
+            Copyright &#169; Marinkart 2020 Designed and developed by <a href="mailto:tonymelek.au@gmail.com">TNM
+                Group</a>
+        </div>
+    </footer>
+
+</body>
+
 </html>
