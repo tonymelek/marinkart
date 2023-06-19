@@ -8,7 +8,6 @@
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
-
         gtag('config', 'UA-172835969-1');
     </script>
     <title>Marinkart</title>
@@ -18,6 +17,9 @@
     <link rel="icon" href="images/icon.png">
     <link href="https://fonts.googleapis.com/css2?family=Sriracha&family=Tangerine&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/c939d0e917.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js"
+        integrity="sha512-uMtXmF28A2Ab/JJO2t/vYhlaa/3ahUOgj1Zf27M5rOo8/+fcTUVH0/E0ll68njmjrLqOBjXM3V9NiPFL5ywWPQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <style>
         .local {
             color: rgb(22, 206, 22) !important;
@@ -84,62 +86,10 @@
         </div>
     </section>
     <script src="./js/app.js"></script>
+    
     <!--Products-->
-    <section>
-        <div class="serv">
-            <div class="details">
-                <h1>Admiralty Products</h1>
-                <p>
-                    All Marinkart premises keep World Wide Coverage of Nautical Charts : Standard Navigational and
-                    Thematic and Nautical Publications
-                </p>
-                <a href="products/P1.html">More Details</a>
-            </div>
-            <img src="images/products/p1.jpg" alt="Products">
-        </div>
-        <div class="serv">
-            <div class="details">
-                <h1>Marinkart Products</h1>
-                <p>
-                    All Marinkart premises keep a wide variety of logbooks and flags
-                </p>
-                <a href="products/P2.html">More Details</a>
-            </div>
-            <img src="images/products/p2.jpg" alt="Products">
-        </div>
-        <div class="serv">
-            <div class="details">
-                <h1>Other Products</h1>
-                <p>
-                    Marinkart is an authoroized disributors. We keep all important titles from IMO and ITU and other
-                    publishers
-                </p>
-                <a href="products/P3.html">More Details</a>
-            </div>
-            <img src="images/products/p3.jpg" alt="Products">
-        </div>
-        <div class="serv">
-            <div class="details">
-                <h1>AVCS</h1>
-                <h1>[Admiralty Vector Chart Service]</h1>
-                <p>
-                    Latest Chart updates are automatically uploaded. Access to chart data from any web-enabled PC
-                    without need to install data or software.
-                </p>
-                <a href="products/P4.html">More Details</a>
-            </div>
-            <img src="images/products/p4.jpg" alt="Products">
-        </div>
-        <div class="serv">
-            <div class="details">
-                <h1>Navigational Accessories</h1>
-                <p>
-                    Binoculars and Correction Tools are available at Marinkart.
-                </p>
-                <a href="products/P5.html">More Details</a>
-            </div>
-            <img src="images/products/p5.jpg" alt="Products">
-        </div>
+    <section id="mainSection">
+
     </section>
     <footer>
         <div class="upper_footer">
@@ -153,6 +103,42 @@
                 Group</a>
         </div>
     </footer>
+    <script>
+        const section = document.querySelector('#mainSection');
+        const loading = document.createElement('h1');
+        loading.innerHTML = "Loading ...";
+        loading.style.textAlign='center';
+        section.appendChild(loading)
+        axios.get('https://script.googleusercontent.com/macros/echo?user_content_key=a5hsGJ3ynpEud1Fy_ry8l-vYfCi4Rqa1FFfHHCqmHaGwF88Z949Nt-T5J5kHn6jYcVau3kFVBwdi2VjfXGiULidCE3hfnd-rm5_BxDlH2jW0nuo2oDemN9CCS2h10ox_1xSncGQajx_ryfhECjZEnAveX7q8pk7y7xYAHajP6mTu7EuEhPsXx0VwOSyq_ZrZikQ7XAgq_fZWyAWPjrhKwJxTRtYSpKVqKjeWpxNXpC8gcyDvaktwuNz9Jw9Md8uu&lib=M_IEyIMbllr4CC0c0v9IJmlhy06C6CTvM').then(({ data }) => {
+            section.removeChild(loading);
+            data.forEach(item => {
+                const serv = document.createElement('div');
+                serv.classList.add('serv');
+                section.appendChild(serv);
+                const details = document.createElement('div');
+                details.classList.add('details');
+                const title = document.createElement('h1');
+                const desc = document.createElement('p');
+                title.innerHTML = item.title;
+                desc.innerHTML = item.description;
+                details.appendChild(title);
+                details.appendChild(desc);
+                if(item.link){
+                    const link=document.createElement('a');
+                    link.href=item.link;
+                    link.innerText='More details';
+                    details.appendChild(link);
+                }
+                serv.appendChild(details);
+                if (item.imageUrl) {
+                    const image = document.createElement('img');
+                    image.src = item.imageUrl;
+                    image.alt = item.title;
+                    serv.appendChild(image);
+                }
+            })
+        });
+    </script>
 </body>
 
 </html>
