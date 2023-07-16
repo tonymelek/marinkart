@@ -104,12 +104,8 @@
         </div>
     </footer>
     <script>
-        const section = document.querySelector('#mainSection');
-        const loading = document.createElement('h1');
-        loading.innerHTML = "Loading ...";
-        loading.style.textAlign='center';
-        section.appendChild(loading)
-        axios.get('https://script.google.com/macros/s/AKfycbzwypS4rklJESPtAqIVljSHMOKQ6UkZqMbWL8pBu5g49fXYPHD0PaeXI6RmEhx92Jg0dg/exec').then(({ data }) => {
+           const updateDom=()=>{
+            const data=JSON.parse(localStorage.getItem('marinkart-products'));
             section.removeChild(loading);
             data.forEach(item => {
                 const serv = document.createElement('div');
@@ -137,7 +133,26 @@
                     serv.appendChild(image);
                 }
             })
-        });
+        }
+        const getNewData=async()=>{
+            const {data}=await axios.get('https://script.google.com/macros/s/AKfycbzwypS4rklJESPtAqIVljSHMOKQ6UkZqMbWL8pBu5g49fXYPHD0PaeXI6RmEhx92Jg0dg/exec');
+            localStorage.setItem('marinkart-products',JSON.stringify(data));
+            localStorage.setItem('lastUpdate',new Date().getTime());
+        }
+        const section = document.querySelector('#mainSection');
+        const loading = document.createElement('h1');
+        loading.innerHTML = "Loading ...";
+        loading.style.textAlign='center';
+        section.appendChild(loading);
+        const lastUpdate=localStorage.getItem('lastUpdate');
+        const currentTime=new Date().getTime();
+        if((currentTime-lastUpdate)/(10000*3600*24)>=1){ //use localStorage , if last update was less than 1 day ago
+            getNewData().then(updateDom)
+        }else{
+            updateDom();
+        }
+
+
     </script>
 </body>
 
