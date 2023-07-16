@@ -106,6 +106,7 @@
     <script>
            const updateDom=()=>{
             const data=JSON.parse(localStorage.getItem('marinkart-products'));
+            if(!data) return;
             section.removeChild(loading);
             data.forEach(item => {
                 const serv = document.createElement('div');
@@ -146,10 +147,10 @@
         section.appendChild(loading);
         const lastUpdate=localStorage.getItem('lastUpdate');
         const currentTime=new Date().getTime();
-        if((currentTime-lastUpdate)/(10000*3600*24)>=1){ //use localStorage , if last update was less than 1 day ago
+        const currentData=localStorage.getItem('marinkart-products')
+        updateDom();
+        if((currentTime-lastUpdate)/(10000*3600*24)>=1 || !currentData){ //use localStorage , if last update was less than 1 day ago
             getNewData().then(updateDom)
-        }else{
-            updateDom();
         }
 
 
