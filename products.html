@@ -116,28 +116,29 @@
                 details.classList.add('details');
                 const title = document.createElement('h1');
                 const desc = document.createElement('p');
-                title.innerHTML = item.title;
+                title.innerHTML = item.name;
                 desc.innerHTML = item.description;
                 details.appendChild(title);
                 details.appendChild(desc);
-                if(item.link){
+                if(item.url){
                     const link=document.createElement('a');
-                    link.href=item.link;
+                    link.href=item.url;
                     link.innerText='More details';
                     details.appendChild(link);
                 }
                 serv.appendChild(details);
-                if (item.imageId) {
+                if (item.image_link) {
                     const image = document.createElement('img');
-                    image.src = item.imageId;
-                    image.alt = item.title;
+                    image.src = item.image_link;
+                    image.alt = item.name;
                     serv.appendChild(image);
                 }
             })
         }
         const getNewData=async()=>{
-            const {data}=await axios.get('https://script.google.com/macros/s/AKfycbzwypS4rklJESPtAqIVljSHMOKQ6UkZqMbWL8pBu5g49fXYPHD0PaeXI6RmEhx92Jg0dg/exec');
-            localStorage.setItem('marinkart-products',JSON.stringify(data));
+            const {data:{products}}=await axios.get('https://inviting-sparrow-49.hasura.app/api/rest/products');
+
+            localStorage.setItem('marinkart-products',JSON.stringify(products));
             localStorage.setItem('lastUpdate',new Date().getTime());
         }
         const section = document.querySelector('#mainSection');
