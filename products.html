@@ -86,17 +86,17 @@
         </div>
     </section>
     <script src="./js/app.js"></script>
-    
+
     <!--Products-->
     <section id="mainSection">
 
     </section>
     <footer>
         <div class="upper_footer">
-            <a href="https://api.whatsapp.com/send?phone=+201202605258"><i class="fab fa-whatsapp-square"></i></a>
+            <a href="https://wa.me/201202605258"><i class="fab fa-whatsapp-square"></i></a>
             Now, you can place your order via WhatsApp +20 120 260 5258 <em>simply click the WhatsApp icon to be
                 transferred </em>
-            <a href="https://api.whatsapp.com/send?phone=+201202605258"><i class="fab fa-whatsapp-square"></i></a>
+            <a href="https://wa.me/201202605258"><i class="fab fa-whatsapp-square"></i></a>
         </div>
         <div class="copyrights">
             Copyright &#169; Marinkart 2020 Designed and developed by <a href="mailto:tonymelek.au@gmail.com">TNM
@@ -104,9 +104,9 @@
         </div>
     </footer>
     <script>
-           const updateDom=()=>{
-            const data=JSON.parse(localStorage.getItem('marinkart-products'));
-            if(!data) return;
+        const updateDom = () => {
+            const data = JSON.parse(localStorage.getItem('marinkart-products'));
+            if (!data) return;
             section.removeChild(loading);
             data.forEach(item => {
                 const serv = document.createElement('div');
@@ -120,10 +120,10 @@
                 desc.innerHTML = item.description;
                 details.appendChild(title);
                 details.appendChild(desc);
-                if(item.url){
-                    const link=document.createElement('a');
-                    link.href=item.url;
-                    link.innerText='More details';
+                if (item.url) {
+                    const link = document.createElement('a');
+                    link.href = item.url;
+                    link.innerText = 'More details';
                     details.appendChild(link);
                 }
                 serv.appendChild(details);
@@ -135,22 +135,22 @@
                 }
             })
         }
-        const getNewData=async()=>{
-            const {data:{products}}=await axios.get('https://inviting-sparrow-49.hasura.app/api/rest/products');
+        const getNewData = async () => {
+            const { data: { products } } = await axios.get('https://inviting-sparrow-49.hasura.app/api/rest/products');
 
-            localStorage.setItem('marinkart-products',JSON.stringify(products));
-            localStorage.setItem('lastUpdate',new Date().getTime());
+            localStorage.setItem('marinkart-products', JSON.stringify(products));
+            localStorage.setItem('lastUpdate', new Date().getTime());
         }
         const section = document.querySelector('#mainSection');
         const loading = document.createElement('h1');
         loading.innerHTML = "Loading ...";
-        loading.style.textAlign='center';
+        loading.style.textAlign = 'center';
         section.appendChild(loading);
-        const lastUpdate=localStorage.getItem('lastUpdate');
-        const currentTime=new Date().getTime();
-        const currentData=localStorage.getItem('marinkart-products')
+        const lastUpdate = localStorage.getItem('lastUpdate');
+        const currentTime = new Date().getTime();
+        const currentData = localStorage.getItem('marinkart-products')
         updateDom();
-        if((currentTime-lastUpdate)/(10000*3600*24)>=1 || !currentData){ //use localStorage , if last update was less than 1 day ago
+        if ((currentTime - lastUpdate) / (10000 * 3600 * 24) >= 1 || !currentData) { //use localStorage , if last update was less than 1 day ago
             getNewData().then(updateDom)
         }
 
